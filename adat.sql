@@ -1,0 +1,1 @@
+select furgon.rsz, min(futar.fiz), sum(futar.fiz) from furgon left join futar on furgon.id=futar.furgonid group by furgon.id
