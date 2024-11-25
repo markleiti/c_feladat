@@ -1,0 +1,1 @@
+select furgon.rsz as Rendszám, sum(futar.fiz) as Fizetések_összege, min(futar.fiz) as Legkisebb_fizetés, furgon.tb from furgon left join futar on furgon.id=futar.furgon_id group by furgon.id
